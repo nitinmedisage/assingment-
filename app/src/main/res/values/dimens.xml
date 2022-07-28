@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_20_sp">20sp</dimen>
+    <dimen name="common_10_dp">10sp</dimen>
+    <dimen name="common_50_dp">50sp</dimen>
+    <dimen name="common_45_dp">45sp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AssingmentMediSage</string>
+    <string name="btn_submit">Submit</string>
+    <string name="hint_password">Enter password</string>
+    <string name="hint_emailId">Enter Email ID</string>
+    <string name="please_check_internet">Please check internate connection</string>
+    <string name="alert">Alert</string>
+    <string name="ok">OK</string>
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout_msg">Do you want to exist?</string>
+</resources>

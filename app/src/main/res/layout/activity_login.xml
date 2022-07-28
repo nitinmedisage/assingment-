@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/rl_one_login"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/v_one_login"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/teal_200" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_one_login"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="@dimen/common_45_dp"
+            app:cardBackgroundColor="#fcfcfc"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            card_view:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/common_50_dp"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_login_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/img_name"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/black"
+                            android:padding="@dimen/common_10_dp"
+                            android:src="@drawable/ic_baseline_email_24" />
+
+                        <EditText
+                            android:id="@+id/idEdtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@id/img_name"
+                            android:background="@drawable/border"
+                            android:hint="@string/hint_emailId"
+                            android:textColorHint="@color/hint_text_color"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="@dimen/common_20_sp"
+                            android:text=""
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/img_pass"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@color/black"
+                            android:padding="@dimen/common_10_dp"
+                            android:src="@drawable/ic_baseline_lock_24" />
+
+                        <EditText
+                            android:id="@+id/idEdtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@id/img_pass"
+                            android:background="@drawable/border"
+                            android:hint="@string/hint_password"
+                            android:inputType="textPassword"
+                            android:maxLength="15"
+                            android:paddingLeft="@dimen/common_20_sp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/hint_text_color"
+                            android:text=""
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_50_dp"
+                        android:layout_below="@+id/ll_login_card"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="@dimen/common_20_sp"
+                        android:elevation="15dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn_login"
+                            android:layout_width="330dp"
+                            android:layout_height="50dp"
+                            android:text="Login"
+                            android:background="@color/teal_200"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
