@@ -106,16 +106,16 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private fun validation(): Boolean {
         var isValid = false
         if (editTextEmailID.text.toString().isEmpty()) {
-            Toast.makeText(applicationContext, "Please Enter email address",
+            Toast.makeText(applicationContext, getString(R.string.please_enter_email),
                     Toast.LENGTH_SHORT).show()
         } else if (!Utility.isValidString(editTextEmailID.text.toString())) {
-            Toast.makeText(applicationContext, "Invalid email address",
+            Toast.makeText(applicationContext, getString(R.string.please_enter_valid_email_address),
                     Toast.LENGTH_SHORT).show()
         } else if (editTextPassword.text.toString().isEmpty()) {
-            Toast.makeText(applicationContext, "Please Enter password",
+            Toast.makeText(applicationContext, getString(R.string.please_enter_password),
                     Toast.LENGTH_SHORT).show()
         } else if (editTextPassword.text.toString().length < 8) {
-            Toast.makeText(applicationContext, "Please enter your password as a 8 to 15 characters ",
+            Toast.makeText(applicationContext, getString(R.string.please_enter_valid_password),
                     Toast.LENGTH_SHORT).show()
         } else {
             isValid = true

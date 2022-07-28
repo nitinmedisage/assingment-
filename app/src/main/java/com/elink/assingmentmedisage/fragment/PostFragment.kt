@@ -65,7 +65,7 @@ class PostFragment : Fragment(), OnItemClickListener {
                     }
                 })
             } else {
-                Toast.makeText(requireActivity(), "No  internet access!!!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireActivity(), getString(R.string.network_message), Toast.LENGTH_SHORT).show()
                 getDataFromRoomDB()
             }
         })
